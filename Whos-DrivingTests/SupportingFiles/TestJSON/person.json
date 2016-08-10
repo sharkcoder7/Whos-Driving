@@ -1,0 +1,45 @@
+{
+    "id": "62ea7f97-99e7-4d97-a268-764de6e7292c",
+    "first_name": "Jane",
+    "last_name": "Doe",
+    "mobile_num": "5555554444",
+    "email": "user_547@example.com",
+    "line1": "555 Rock Ridge Road",
+    "line2": null,
+    "city": "Dallas",
+    "state": "TX",
+    "zip": "75201",
+    "image_url": "/uploads/test/user/image/62ea7f97-99e7-4d97-a268-764de6e7292c/thumb_50ef744e-d19b-4639-9669-8fda80d9a7a3.jpg",
+    "relationship_type": "current_user",
+    "licensed_driver": true,
+    "partner":
+                {
+                    "id": "bc456084-1c7b-4bd0-a127-691ffdcc98bc",
+                    "first_name": "Bobby",
+                    "last_name": "Doe",
+                    "mobile_num": "5555554444",
+                    "image_url": "/uploads/test/user/image/bc456084-1c7b-4bd0-a127-691ffdcc98bc/thumb_9b2e46b8-012c-4aee-a5de-07b8451a25d1.jpg",
+                    "relationship_type": "household",
+                    "licensed_driver": true
+                },
+    "household_riders": [
+                         {
+                         "id": "52da75f8-29ad-4b0d-8a88-ed62494c5154",
+                         "first_name": "Susie",
+                         "last_name": "Doe",
+                         "mobile_num": "5555554444",
+                         "image_url": "/uploads/test/user/image/52da75f8-29ad-4b0d-8a88-ed62494c5154/thumb_f477b489-5f65-4149-9d33-1268bdde7aa9.jpg",
+                         "relationship_type": "household",
+                         "licensed_driver": false
+                         },
+                         {
+                         "id": "d6873a89-aefe-40ea-817f-79d96f1e64f8",
+                         "first_name": "Billy",
+                         "last_name": "Doe",
+                         "mobile_num": "5555554444",
+                         "image_url": "/uploads/test/user/image/d6873a89-aefe-40ea-817f-79d96f1e64f8/thumb_3c9f04b7-db94-4f18-a0be-ecdd14c5e63b.jpg",
+                         "relationship_type": "household",
+                         "licensed_driver": false
+                         }
+                         ]
+}

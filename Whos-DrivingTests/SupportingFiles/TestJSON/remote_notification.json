@@ -1,0 +1,9 @@
+{
+    "aps": {
+        "alert": "Test alert",
+        "author_id": "1234567890",
+        "author_name": "John D",
+        "event_id": "a1b2c3d4",
+        "notification_type": "delete",
+    }
+}

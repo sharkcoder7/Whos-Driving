@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LegalViewController" customModule="whos_driving_production" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="vYy-W7-BmO" id="N2d-DX-AEB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" rowHeight="40" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="vYy-W7-BmO">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="kVA-lC-xMc"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="qEN-dE-UXa"/>
+                        <outlet property="delegate" destination="-1" id="v6w-PT-hMh"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.96999999999999997" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="vYy-W7-BmO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0Bj-rf-gGf"/>
+                <constraint firstItem="vYy-W7-BmO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="GlI-N2-I7H"/>
+                <constraint firstAttribute="trailing" secondItem="vYy-W7-BmO" secondAttribute="trailing" id="apB-vR-QYB"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

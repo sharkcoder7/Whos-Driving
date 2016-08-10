@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResponseConfirmationView" customModule="whos_driving" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="T1x-Eq-8Jo" id="6HR-6h-Xm0"/>
+                <outlet property="textLabel" destination="Lgh-5h-Y3h" id="uIJ-qV-bKZ"/>
+                <outlet property="titleLabel" destination="6TN-0a-4YW" id="pH9-kh-Rxd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="400"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header-check" translatesAutoresizingMaskIntoConstraints="NO" id="T1x-Eq-8Jo">
+                    <rect key="frame" x="134" y="50" width="106" height="106"/>
+                    <animations/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title here!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TN-0a-4YW">
+                    <rect key="frame" x="133" y="164" width="109" height="31"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="26"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lgh-5h-Y3h">
+                    <rect key="frame" x="175" y="215" width="25" height="17"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLy-wb-KY1">
+                    <rect key="frame" x="30" y="348" width="315" height="44"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="nkm-4e-hpH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                    <state key="normal" title="Dismiss">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="dismissButtonTapped:" destination="-1" eventType="touchUpInside" id="Tdf-xr-kHY"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="T1x-Eq-8Jo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="2pu-XH-1PE"/>
+                <constraint firstAttribute="bottom" secondItem="nLy-wb-KY1" secondAttribute="bottom" constant="8" id="32x-ES-aa5"/>
+                <constraint firstItem="6TN-0a-4YW" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9Tj-nf-v92"/>
+                <constraint firstItem="T1x-Eq-8Jo" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="KXd-Wu-EOS"/>
+                <constraint firstItem="6TN-0a-4YW" firstAttribute="top" secondItem="T1x-Eq-8Jo" secondAttribute="bottom" constant="8" id="M4f-Fe-n1Z"/>
+                <constraint firstAttribute="trailing" secondItem="nLy-wb-KY1" secondAttribute="trailing" constant="30" id="PR3-Tv-XrX"/>
+                <constraint firstItem="Lgh-5h-Y3h" firstAttribute="top" secondItem="6TN-0a-4YW" secondAttribute="bottom" constant="20" id="Xva-DB-kYq"/>
+                <constraint firstItem="Lgh-5h-Y3h" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ubE-YY-LKu"/>
+                <constraint firstItem="nLy-wb-KY1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="vVQ-VY-lRL"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="919.5" y="543"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="header-check" width="106" height="106"/>
+    </resources>
+</document>

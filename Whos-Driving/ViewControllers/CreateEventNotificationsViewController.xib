@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateEventNotificationsViewController" customModule="whos_driving_production" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="AYj-pe-qQh" id="fOg-wO-J6C"/>
+                <outlet property="driversCollectionView" destination="f4N-An-Sua" id="UQ3-En-nvP"/>
+                <outlet property="driversLoadingSpinner" destination="X8k-Xq-7gF" id="4u8-I2-BAK"/>
+                <outlet property="emptyStateLabel" destination="Nvj-47-hMQ" id="aVE-WW-VkJ"/>
+                <outlet property="headerView" destination="Cef-qe-bKv" id="0jU-ZN-RWI"/>
+                <outlet property="messageWillSayLabel" destination="nhr-28-1sr" id="QOx-gR-Cda"/>
+                <outlet property="scrollView" destination="AdF-bw-le5" id="ogb-GN-3t3"/>
+                <outlet property="speechBubbleBackground" destination="5IZ-gl-SM7" id="DFD-jf-Imw"/>
+                <outlet property="speechBubbleLabel" destination="Fki-YO-d3c" id="r4U-zl-Aro"/>
+                <outlet property="speechBubbleTail" destination="3Oo-ca-Mzv" id="owZ-EC-gmq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="whosDrivingLabel" destination="Z7z-pE-68d" id="kOL-E6-FQE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AdF-bw-le5">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                    <subviews>
+                        <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cef-qe-bKv" userLabel="header view">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="172"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header-car" translatesAutoresizingMaskIntoConstraints="NO" id="f1x-tZ-aiv">
+                                    <rect key="frame" x="134" y="12" width="106" height="106"/>
+                                    <animations/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjA-vG-fsR">
+                                    <rect key="frame" x="121" y="96" width="134" height="27"/>
+                                    <animations/>
+                                    <attributedString key="attributedText">
+                                        <fragment content="Notify ">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <font key="NSFont" size="22.5" name="HelveticaNeue-Medium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="others!">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <font key="NSFont" size="22.5" name="HelveticaNeue-Light"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose who you would like to notify about this carpool" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oQW-kQ-s7O">
+                                    <rect key="frame" x="16" y="130" width="344" height="17"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" red="0.28627450980000002" green="0.53333333329999999" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="oQW-kQ-s7O" firstAttribute="top" secondItem="Cef-qe-bKv" secondAttribute="top" constant="130" id="03z-3u-aBi"/>
+                                <constraint firstItem="oQW-kQ-s7O" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Cef-qe-bKv" secondAttribute="leading" constant="15" id="164-Ko-BtJ"/>
+                                <constraint firstAttribute="centerX" secondItem="oQW-kQ-s7O" secondAttribute="centerX" id="1VM-yN-2vH"/>
+                                <constraint firstItem="jjA-vG-fsR" firstAttribute="top" secondItem="Cef-qe-bKv" secondAttribute="top" constant="96" id="O5C-va-aF1"/>
+                                <constraint firstItem="f1x-tZ-aiv" firstAttribute="top" secondItem="Cef-qe-bKv" secondAttribute="top" constant="12" id="XFJ-V2-BmD"/>
+                                <constraint firstAttribute="centerX" secondItem="f1x-tZ-aiv" secondAttribute="centerX" id="fVF-bK-FNl"/>
+                                <constraint firstItem="oQW-kQ-s7O" firstAttribute="top" secondItem="jjA-vG-fsR" secondAttribute="bottom" constant="7" id="vmE-oo-o5O"/>
+                                <constraint firstAttribute="centerX" secondItem="jjA-vG-fsR" secondAttribute="centerX" id="wyU-1M-t41"/>
+                                <constraint firstAttribute="height" constant="172" id="zAa-XN-fOD"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AYj-pe-qQh" userLabel="content view">
+                            <rect key="frame" x="0.0" y="172" width="375" height="251"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who should be notified?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7z-pE-68d">
+                                    <rect key="frame" x="18" y="20" width="158" height="17"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="f4N-An-Sua">
+                                    <rect key="frame" x="0.0" y="47" width="375" height="60"/>
+                                    <animations/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="rzf-xc-oA8"/>
+                                    </constraints>
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="tjl-bQ-Zdt">
+                                        <size key="itemSize" width="60" height="60"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-1" id="ecM-FO-SKn"/>
+                                        <outlet property="delegate" destination="-1" id="dUV-2K-jEj"/>
+                                    </connections>
+                                </collectionView>
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nvj-47-hMQ">
+                                    <rect key="frame" x="18" y="52" width="349" height="49"/>
+                                    <animations/>
+                                    <string key="text">This carpool doesn't involve other people, so no notifications can be sent. Tap the back arrow to modify the carpool or tap 'Create' to continue.</string>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="X8k-Xq-7gF">
+                                    <rect key="frame" x="169" y="58" width="37" height="37"/>
+                                    <animations/>
+                                </activityIndicatorView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is what the message will say:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhr-28-1sr">
+                                    <rect key="frame" x="18" y="137" width="219" height="17"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5IZ-gl-SM7" userLabel="speechBubbleBackground">
+                                    <rect key="frame" x="23" y="162" width="329" height="60"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example notification here" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fki-YO-d3c" userLabel="speechBubbleLabel">
+                                            <rect key="frame" x="18" y="20" width="293" height="20"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                    <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Fki-YO-d3c" secondAttribute="trailing" constant="18" id="5sl-Ob-zK7"/>
+                                        <constraint firstItem="Fki-YO-d3c" firstAttribute="leading" secondItem="5IZ-gl-SM7" secondAttribute="leading" constant="18" id="7hk-Cf-zlm"/>
+                                        <constraint firstItem="Fki-YO-d3c" firstAttribute="top" secondItem="5IZ-gl-SM7" secondAttribute="top" constant="20" id="NZ1-YO-rTB"/>
+                                        <constraint firstAttribute="bottom" secondItem="Fki-YO-d3c" secondAttribute="bottom" constant="20" id="fci-KV-dNh"/>
+                                    </constraints>
+                                </view>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="speechbubble-tail" translatesAutoresizingMaskIntoConstraints="NO" id="3Oo-ca-Mzv">
+                                    <rect key="frame" x="16" y="207" width="14" height="15"/>
+                                    <animations/>
+                                </imageView>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="Z7z-pE-68d" firstAttribute="leading" secondItem="AYj-pe-qQh" secondAttribute="leading" constant="18" id="0OB-N7-0uI"/>
+                                <constraint firstAttribute="trailing" secondItem="5IZ-gl-SM7" secondAttribute="trailing" constant="23" id="1lI-go-6fz"/>
+                                <constraint firstAttribute="bottom" secondItem="5IZ-gl-SM7" secondAttribute="bottom" constant="30" id="3LI-eb-oeA"/>
+                                <constraint firstItem="f4N-An-Sua" firstAttribute="leading" secondItem="AYj-pe-qQh" secondAttribute="leading" id="D2G-84-wHB"/>
+                                <constraint firstItem="f4N-An-Sua" firstAttribute="top" secondItem="Z7z-pE-68d" secondAttribute="bottom" constant="10" id="Eq9-V2-rBj"/>
+                                <constraint firstAttribute="trailing" secondItem="Nvj-47-hMQ" secondAttribute="trailing" constant="8" id="JVf-wH-qhV"/>
+                                <constraint firstItem="Z7z-pE-68d" firstAttribute="top" secondItem="AYj-pe-qQh" secondAttribute="top" constant="20" id="JqK-NK-bV9"/>
+                                <constraint firstAttribute="trailing" secondItem="f4N-An-Sua" secondAttribute="trailing" id="MAh-Il-4Yu"/>
+                                <constraint firstItem="3Oo-ca-Mzv" firstAttribute="top" secondItem="5IZ-gl-SM7" secondAttribute="bottom" constant="-15" id="MXU-xJ-Rvy"/>
+                                <constraint firstItem="5IZ-gl-SM7" firstAttribute="top" secondItem="nhr-28-1sr" secondAttribute="bottom" constant="8" id="RG8-GE-hbt"/>
+                                <constraint firstItem="nhr-28-1sr" firstAttribute="leading" secondItem="AYj-pe-qQh" secondAttribute="leading" constant="18" id="Uk0-bH-qv9"/>
+                                <constraint firstItem="nhr-28-1sr" firstAttribute="top" secondItem="f4N-An-Sua" secondAttribute="bottom" constant="30" id="WoD-Ff-WZw"/>
+                                <constraint firstItem="5IZ-gl-SM7" firstAttribute="leading" secondItem="AYj-pe-qQh" secondAttribute="leading" constant="23" id="Wxs-iC-D5a"/>
+                                <constraint firstItem="Nvj-47-hMQ" firstAttribute="leading" secondItem="Z7z-pE-68d" secondAttribute="leading" id="hRj-iy-atR"/>
+                                <constraint firstItem="5IZ-gl-SM7" firstAttribute="leading" secondItem="3Oo-ca-Mzv" secondAttribute="trailing" constant="-7" id="kHU-QN-InN"/>
+                                <constraint firstItem="X8k-Xq-7gF" firstAttribute="centerY" secondItem="f4N-An-Sua" secondAttribute="centerY" id="woD-GH-ccJ"/>
+                                <constraint firstItem="X8k-Xq-7gF" firstAttribute="centerX" secondItem="f4N-An-Sua" secondAttribute="centerX" id="xr9-jQ-cjj"/>
+                                <constraint firstItem="Nvj-47-hMQ" firstAttribute="centerY" secondItem="f4N-An-Sua" secondAttribute="centerY" id="yKM-dq-NeI"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Cef-qe-bKv" firstAttribute="width" secondItem="AdF-bw-le5" secondAttribute="width" id="MgM-T0-G5G"/>
+                        <constraint firstItem="Cef-qe-bKv" firstAttribute="top" secondItem="AdF-bw-le5" secondAttribute="top" id="Zdu-xJ-WKu"/>
+                        <constraint firstAttribute="trailing" secondItem="AYj-pe-qQh" secondAttribute="trailing" id="c2J-YQ-bNx"/>
+                        <constraint firstAttribute="trailing" secondItem="Cef-qe-bKv" secondAttribute="trailing" id="fcq-F1-eWp"/>
+                        <constraint firstItem="AYj-pe-qQh" firstAttribute="leading" secondItem="AdF-bw-le5" secondAttribute="leading" id="lbt-gj-rb1"/>
+                        <constraint firstItem="Cef-qe-bKv" firstAttribute="leading" secondItem="AdF-bw-le5" secondAttribute="leading" id="pIf-BP-6P0"/>
+                        <constraint firstAttribute="bottom" secondItem="AYj-pe-qQh" secondAttribute="bottom" id="zMn-rH-wDn"/>
+                        <constraint firstItem="AYj-pe-qQh" firstAttribute="top" secondItem="Cef-qe-bKv" secondAttribute="bottom" id="zQc-mo-9OY"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="qQY-ik-KGq"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="AdF-bw-le5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Lz9-G9-sXJ"/>
+                <constraint firstAttribute="trailing" secondItem="AdF-bw-le5" secondAttribute="trailing" id="Wsi-fQ-mQr"/>
+                <constraint firstAttribute="bottom" secondItem="AdF-bw-le5" secondAttribute="bottom" id="gZ8-Gn-DvE"/>
+                <constraint firstItem="AdF-bw-le5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lka-8K-QeG"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="header-car" width="106" height="106"/>
+        <image name="speechbubble-tail" width="14" height="15"/>
+    </resources>
+</document>

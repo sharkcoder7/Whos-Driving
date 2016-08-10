@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CarpoolsViewController" customModule="whos_driving_production" customModuleProvider="target">
+            <connections>
+                <outlet property="emptyStateView" destination="bPM-SP-T1W" id="hcs-69-s2J"/>
+                <outlet property="pastEventsEmptyStateLabel" destination="vLB-Dr-NaK" id="7kn-UU-JGL"/>
+                <outlet property="segmentedControl" destination="bHt-cX-2mi" id="qtw-9X-Po3"/>
+                <outlet property="segmentedControlContainerView" destination="M5z-X1-wrv" id="fif-Sg-c2O"/>
+                <outlet property="tableView" destination="LZs-Ln-i0r" id="sPm-0a-HDf"/>
+                <outlet property="view" destination="xcF-Ah-0kM" id="nbO-ee-mZU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="xcF-Ah-0kM">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="185" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="LZs-Ln-i0r">
+                    <rect key="frame" x="0.0" y="59" width="320" height="445"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="8hZ-hV-zmj"/>
+                        <outlet property="delegate" destination="-1" id="8GW-aj-9r9"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M5z-X1-wrv">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="51"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bHt-cX-2mi">
+                            <rect key="frame" x="10" y="15" width="300" height="29"/>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <segments>
+                                <segment title="Upcoming"/>
+                                <segment title="Past"/>
+                            </segments>
+                            <connections>
+                                <action selector="segmentedSelected:" destination="-1" eventType="valueChanged" id="xQw-ft-PIx"/>
+                            </connections>
+                        </segmentedControl>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="bHt-cX-2mi" secondAttribute="bottom" constant="8" id="1PC-uE-Sd2"/>
+                        <constraint firstAttribute="trailing" secondItem="bHt-cX-2mi" secondAttribute="trailing" constant="10" id="NyJ-On-Geg"/>
+                        <constraint firstItem="bHt-cX-2mi" firstAttribute="leading" secondItem="M5z-X1-wrv" secondAttribute="leading" constant="10" id="U2w-AA-uSU"/>
+                        <constraint firstItem="bHt-cX-2mi" firstAttribute="top" secondItem="M5z-X1-wrv" secondAttribute="top" constant="15" id="zPM-9D-ear"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="1000" text="You have no carpools in your past." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLB-Dr-NaK">
+                    <rect key="frame" x="56" y="273" width="208" height="17"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bPM-SP-T1W" customClass="EmptyStateView" customModule="whos_driving_production" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="51" width="320" height="453"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="bPM-SP-T1W" firstAttribute="top" secondItem="M5z-X1-wrv" secondAttribute="bottom" id="1pH-sX-uv2"/>
+                <constraint firstItem="bPM-SP-T1W" firstAttribute="top" secondItem="M5z-X1-wrv" secondAttribute="bottom" id="2wd-sm-N8c"/>
+                <constraint firstItem="M5z-X1-wrv" firstAttribute="leading" secondItem="xcF-Ah-0kM" secondAttribute="leading" id="C5I-DP-o89"/>
+                <constraint firstAttribute="bottom" secondItem="bPM-SP-T1W" secondAttribute="bottom" id="Dhe-0R-ZaP"/>
+                <constraint firstItem="LZs-Ln-i0r" firstAttribute="top" secondItem="xcF-Ah-0kM" secondAttribute="top" constant="59" id="HjR-RU-qUz"/>
+                <constraint firstItem="LZs-Ln-i0r" firstAttribute="leading" secondItem="xcF-Ah-0kM" secondAttribute="leading" id="Q9Q-WP-K8C"/>
+                <constraint firstAttribute="trailing" secondItem="bPM-SP-T1W" secondAttribute="trailing" id="Qff-LY-mFS"/>
+                <constraint firstItem="bPM-SP-T1W" firstAttribute="leading" secondItem="xcF-Ah-0kM" secondAttribute="leading" id="R7G-zQ-hvM"/>
+                <constraint firstItem="vLB-Dr-NaK" firstAttribute="centerY" secondItem="LZs-Ln-i0r" secondAttribute="centerY" id="X9q-Yt-yfw"/>
+                <constraint firstAttribute="trailing" secondItem="LZs-Ln-i0r" secondAttribute="trailing" id="Z38-0j-xW2"/>
+                <constraint firstItem="M5z-X1-wrv" firstAttribute="top" secondItem="xcF-Ah-0kM" secondAttribute="top" id="Zeg-63-bGg"/>
+                <constraint firstItem="vLB-Dr-NaK" firstAttribute="centerX" secondItem="LZs-Ln-i0r" secondAttribute="centerX" id="aX8-On-TUU"/>
+                <constraint firstAttribute="bottom" secondItem="LZs-Ln-i0r" secondAttribute="bottom" id="ahj-BX-NSU"/>
+                <constraint firstAttribute="trailing" secondItem="M5z-X1-wrv" secondAttribute="trailing" id="q8N-eh-R9z"/>
+                <constraint firstItem="LZs-Ln-i0r" firstAttribute="top" secondItem="M5z-X1-wrv" secondAttribute="bottom" constant="8" id="zON-mM-qhV"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="1pH-sX-uv2"/>
+                    <exclude reference="HjR-RU-qUz"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="372" y="396"/>
+        </view>
+    </objects>
+</document>

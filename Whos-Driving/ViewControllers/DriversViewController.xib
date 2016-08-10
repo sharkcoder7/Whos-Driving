@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DriversViewController" customModule="whos_driving_production" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="Ms5-TJ-g3n" id="3Gu-OI-chx"/>
+                <outlet property="emptyStateView" destination="3XO-Gz-CAQ" id="plh-2H-bIa"/>
+                <outlet property="view" destination="Six-eF-1hd" id="YP8-xs-Vj9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Six-eF-1hd">
+            <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Ms5-TJ-g3n">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="7F4-DU-xDX">
+                        <size key="itemSize" width="69" height="65"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="15" minY="30" maxX="15" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="w5E-1d-iDH"/>
+                        <outlet property="delegate" destination="-1" id="gKk-eQ-UAi"/>
+                    </connections>
+                </collectionView>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3XO-Gz-CAQ" customClass="EmptyStateView" customModule="whos_driving_production" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3XO-Gz-CAQ" firstAttribute="top" secondItem="Six-eF-1hd" secondAttribute="top" id="3b7-nu-cpS"/>
+                <constraint firstAttribute="bottom" secondItem="3XO-Gz-CAQ" secondAttribute="bottom" id="6xD-Fl-C8l"/>
+                <constraint firstItem="3XO-Gz-CAQ" firstAttribute="leading" secondItem="Six-eF-1hd" secondAttribute="leading" id="BrP-fW-aZZ"/>
+                <constraint firstAttribute="trailing" secondItem="3XO-Gz-CAQ" secondAttribute="trailing" id="Fz8-8J-fyj"/>
+                <constraint firstAttribute="bottom" secondItem="Ms5-TJ-g3n" secondAttribute="bottom" id="SQ6-q6-W45"/>
+                <constraint firstAttribute="trailing" secondItem="Ms5-TJ-g3n" secondAttribute="trailing" id="aQ2-Lq-v9N"/>
+                <constraint firstItem="Ms5-TJ-g3n" firstAttribute="leading" secondItem="Six-eF-1hd" secondAttribute="leading" id="ebB-4W-XeL"/>
+                <constraint firstItem="Ms5-TJ-g3n" firstAttribute="top" secondItem="Six-eF-1hd" secondAttribute="top" id="yGf-st-KQo"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="334.5" y="382.5"/>
+        </view>
+    </objects>
+</document>

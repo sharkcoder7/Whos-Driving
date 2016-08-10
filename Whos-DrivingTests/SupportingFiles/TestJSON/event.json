@@ -1,0 +1,214 @@
+{
+    "id": "4ef86611-b9b4-4de0-acad-317c226fb5fe",
+    "name": "Kiddy Code School",
+    "location": "2913 Harriet Ave S, Minneapolis, MN 55407",
+    "owner_id": "eaa0eb00-aa52-4bbc-a9a6-0ecbf6d2b62a",
+    "start_time": "2015-12-09T16:46:05Z",
+    "end_time": "2015-12-11T16:46:05Z",
+    "notice": "Heads up! This carpool needs 1 more driver!",
+    "travel_to_details": {
+        "driver": {
+            "id": "b0f62147-5d6c-4efd-8fce-385bd44b4117",
+            "first_name": "Jane",
+            "last_name": "Doe",
+            "mobile_num": "5555554444",
+            "email": "user_652@example.com",
+            "line1": "555 Rock Ridge Road",
+            "line2": null,
+            "city": "Dallas",
+            "state": "TX",
+            "zip": "75201",
+            "image_url": "/uploads/test/user/image/b0f62147-5d6c-4efd-8fce-385bd44b4117/thumb_9f65e125-a6ba-4ea7-9766-0b5a06544665.jpg",
+            "relationship_type": "current_user",
+            "licensed_driver": true
+        },
+        "note": "Pick-up all riders at school.",
+        "riders": [
+                   {
+                   "id": "75298cb3-d40c-493d-9a86-56b9a0007133",
+                   "first_name": "Jane",
+                   "last_name": "Doe",
+                   "mobile_num": "5555554444",
+                   "image_url": "/uploads/test/user/image/75298cb3-d40c-493d-9a86-56b9a0007133/thumb_125018f5-b115-4e74-bbb3-bbf48710eda0.jpg",
+                   "relationship_type": "untrusted",
+                   "licensed_driver": true,
+                   "household_drivers": [
+                   
+                   ]
+                   },
+                   {
+                   "id": "862d0ace-629a-4924-a0b7-292bfb393272",
+                   "first_name": "Jane",
+                   "last_name": "Doe",
+                   "mobile_num": "5555554444",
+                   "image_url": "/uploads/test/user/image/862d0ace-629a-4924-a0b7-292bfb393272/thumb_1749329a-8711-4fb6-9a85-a285ba49e12c.jpg",
+                   "relationship_type": "untrusted",
+                   "licensed_driver": true,
+                   "household_drivers": [
+                   
+                   ]
+                   }
+                   ]
+    },
+    "travel_from_details": {
+        "driver": {
+        },
+        "note": "Drop off all riders at home.",
+        "riders": [
+                   {
+                   "id": "94800769-090c-422b-9563-8df89eda9b71",
+                   "first_name": "Jane",
+                   "last_name": "Doe",
+                   "mobile_num": "5555554444",
+                   "image_url": "/uploads/test/user/image/94800769-090c-422b-9563-8df89eda9b71/thumb_9f96ed66-eba9-4095-b5d4-f3630e2f5968.jpg",
+                   "relationship_type": "untrusted",
+                   "licensed_driver": true,
+                   "household_drivers": [
+                   
+                   ]
+                   },
+                   {
+                   "id": "8cdde783-681d-4cb6-896e-e3b3e7add772",
+                   "first_name": "Jane",
+                   "last_name": "Doe",
+                   "mobile_num": "5555554444",
+                   "image_url": "/uploads/test/user/image/8cdde783-681d-4cb6-896e-e3b3e7add772/thumb_2643e3a7-506e-4711-8875-1d423da2a760.jpg",
+                   "relationship_type": "untrusted",
+                   "licensed_driver": true,
+                   "household_drivers": [
+                   
+                   ]
+                   }
+                   ]
+    },
+    "created_at": "2015-12-10T16:46:05Z",
+    "updated_at": "2015-12-10T16:46:05Z",
+    "stats": {
+        "last_read_by_current_user_at": "2015-12-10T16:46:05Z"
+    },
+    "driver_actions": {
+        "can_drive_availability": [
+                                   "can_drive_from",
+                                   "cannot_drive_from"
+                                   ],
+        "driver_status_response_to": null,
+        "driver_status_response_from": null
+    },
+    "event_history": [
+                      {
+                      "driver_id": "3f2e53a7-96d4-4c2c-94b6-9c38076d43c9",
+                      "name": "Jane D",
+                      "image_url": "/uploads/test/user/image/3f2e53a7-96d4-4c2c-94b6-9c38076d43c9/thumb_9a3c964a-fe87-42e0-a187-aa82d96b6b1e.jpg",
+                      "timestamp": "2015-12-10T16:45:05Z",
+                      "description": "Change 1"
+                      },
+                      {
+                      "driver_id": "9fe2b4b2-672c-4bc7-98b3-b8c6f25fa378",
+                      "name": "Jane D",
+                      "image_url": "/uploads/test/user/image/9fe2b4b2-672c-4bc7-98b3-b8c6f25fa378/thumb_32e2f5f8-b5d7-409c-99cf-5e324d7a853c.jpg",
+                      "timestamp": "2015-12-10T16:44:05Z",
+                      "description": "Change 2"
+                      },
+                      {
+                      "driver_id": "1c282421-e9d8-4f3a-a0a8-b788345616c3",
+                      "name": "Jane D",
+                      "image_url": "/uploads/test/user/image/1c282421-e9d8-4f3a-a0a8-b788345616c3/thumb_4916a0b2-f2bc-4334-8905-57d5fd75fddc.jpg",
+                      "timestamp": "2015-12-10T16:43:05Z",
+                      "description": "Change 3"
+                      },
+                      {
+                      "driver_id": "389d100c-1d20-447a-b0f2-e668c511fbf9",
+                      "name": "Jane D",
+                      "image_url": "/uploads/test/user/image/389d100c-1d20-447a-b0f2-e668c511fbf9/thumb_f4eac647-4cb0-4d43-9a6d-56e6e2fd2c3a.jpg",
+                      "timestamp": "2015-12-10T16:42:05Z",
+                      "description": "Change 4"
+                      },
+                      {
+                      "driver_id": "3b1bd6fe-c011-4110-873b-979d00974f90",
+                      "name": "Jane D",
+                      "image_url": "/uploads/test/user/image/3b1bd6fe-c011-4110-873b-979d00974f90/thumb_efca7509-dba4-4dcd-b4c5-b8fe8e099e8d.jpg",
+                      "timestamp": "2015-12-10T16:41:05Z",
+                      "description": "Change 5"
+                      }
+                      ],
+    "users": {
+        "selectable_drivers_to": [
+                                  {
+                                  "id": "b0f62147-5d6c-4efd-8fce-385bd44b4117",
+                                  "first_name": "Jane",
+                                  "last_name": "Doe",
+                                  "mobile_num": "5555554444",
+                                  "image_url": "/uploads/test/user/image/b0f62147-5d6c-4efd-8fce-385bd44b4117/thumb_9f65e125-a6ba-4ea7-9766-0b5a06544665.jpg",
+                                  "relationship_type": "current_user",
+                                  "licensed_driver": true,
+                                  "driver_status_response_to": null,
+                                  "driver_status_response_from": null
+                                  }
+                                  ],
+        "selectable_drivers_from": [
+                                    {
+                                    "id": "b0f62147-5d6c-4efd-8fce-385bd44b4117",
+                                    "first_name": "Jane",
+                                    "last_name": "Doe",
+                                    "mobile_num": "5555554444",
+                                    "image_url": "/uploads/test/user/image/b0f62147-5d6c-4efd-8fce-385bd44b4117/thumb_9f65e125-a6ba-4ea7-9766-0b5a06544665.jpg",
+                                    "relationship_type": "current_user",
+                                    "licensed_driver": true,
+                                    "driver_status_response_to": null,
+                                    "driver_status_response_from": null
+                                    }
+                                    ],
+        "selectable_riders_to": [
+                                 {
+                                 "id": "75298cb3-d40c-493d-9a86-56b9a0007133",
+                                 "first_name": "Jane",
+                                 "last_name": "Doe",
+                                 "mobile_num": "5555554444",
+                                 "image_url": "/uploads/test/user/image/75298cb3-d40c-493d-9a86-56b9a0007133/thumb_125018f5-b115-4e74-bbb3-bbf48710eda0.jpg",
+                                 "relationship_type": "untrusted",
+                                 "licensed_driver": true,
+                                 "household_drivers": [
+                                 
+                                 ]
+                                 },
+                                 {
+                                 "id": "862d0ace-629a-4924-a0b7-292bfb393272",
+                                 "first_name": "Jane",
+                                 "last_name": "Doe",
+                                 "mobile_num": "5555554444",
+                                 "image_url": "/uploads/test/user/image/862d0ace-629a-4924-a0b7-292bfb393272/thumb_1749329a-8711-4fb6-9a85-a285ba49e12c.jpg",
+                                 "relationship_type": "untrusted",
+                                 "licensed_driver": true,
+                                 "household_drivers": [
+                                 
+                                 ]
+                                 }
+                                 ],
+        "selectable_riders_from": [
+                                   {
+                                   "id": "94800769-090c-422b-9563-8df89eda9b71",
+                                   "first_name": "Jane",
+                                   "last_name": "Doe",
+                                   "mobile_num": "5555554444",
+                                   "image_url": "/uploads/test/user/image/94800769-090c-422b-9563-8df89eda9b71/thumb_9f96ed66-eba9-4095-b5d4-f3630e2f5968.jpg",
+                                   "relationship_type": "untrusted",
+                                   "licensed_driver": true,
+                                   "household_drivers": [
+                                   
+                                   ]
+                                   },
+                                   {
+                                   "id": "8cdde783-681d-4cb6-896e-e3b3e7add772",
+                                   "first_name": "Jane",
+                                   "last_name": "Doe",
+                                   "mobile_num": "5555554444",
+                                   "image_url": "/uploads/test/user/image/8cdde783-681d-4cb6-896e-e3b3e7add772/thumb_2643e3a7-506e-4711-8875-1d423da2a760.jpg",
+                                   "relationship_type": "untrusted",
+                                   "licensed_driver": true,
+                                   "household_drivers": [
+                                   
+                                   ]
+                                   }
+                                   ]
+    }
+}

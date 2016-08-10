@@ -1,0 +1,41 @@
+{
+    "data": {
+        "invite_token": "999d6e1ef5",
+        "invite_type": "trusted",
+        "status": "ok",
+        "status_message": "Jane Doe would like to add you as a trusted driver.",
+        "status_detail": "Accepting the invitation will make Jane a trusted driver for you too.",
+        "inviting_driver": {
+            "id": "2e41a3e5-c1b9-4b5a-95da-8da8e85284a3",
+            "first_name": "Bobby",
+            "last_name": "Guy",
+            "mobile_num": "5555554444",
+            "email": "user_3654@example.com",
+            "line1": "555 Rock Ridge Road",
+            "line2": null,
+            "city": "Dallas",
+            "state": "TX",
+            "zip": "75201",
+            "image_url": "/uploads/test/user/image/2e41a3e5-c1b9-4b5a-95da-8da8e85284a3/thumb_995e4863-3c4e-4adc-a288-082a44acc53c.jpg",
+            "relationship_type": "untrusted",
+            "licensed_driver": true
+        },
+        "invited_driver": {
+            "id": "6eebd057-4613-4bee-94ae-9970a25fe354",
+            "first_name": "Jane",
+            "last_name": "Doe",
+            "mobile_num": "5555554444",
+            "email": "user_3653@example.com",
+            "line1": "555 Rock Ridge Road",
+            "line2": null,
+            "city": "Dallas",
+            "state": "TX",
+            "zip": "75201",
+            "image_url": "/uploads/test/user/image/6eebd057-4613-4bee-94ae-9970a25fe354/thumb_2e6200f2-f847-40a0-90c6-260c264dc9fc.jpg",
+            "relationship_type": "current_user",
+            "licensed_driver": true
+        }
+    },
+    "metadata": {
+    }
+}

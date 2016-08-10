@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CarpoolsCell" customModule="whos_driving_production" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="185"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="185"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YRZ-aH-I6G" customClass="ColoredEdgeView" customModule="whos_driving_production" customModuleProvider="target">
+                        <rect key="frame" x="63" y="8" width="299" height="169"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jfx-9Z-sG1" userLabel="Updated Container View">
+                                <rect key="frame" x="11" y="-2" width="56" height="15"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UPDATED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddO-pw-cND" userLabel="Updated Label">
+                                        <rect key="frame" x="8" y="2" width="40" height="11"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="9"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.28627450980000002" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ddO-pw-cND" secondAttribute="trailing" constant="8" id="AyA-Es-tO8"/>
+                                    <constraint firstAttribute="bottom" secondItem="ddO-pw-cND" secondAttribute="bottom" constant="2" id="B14-Fy-lUg"/>
+                                    <constraint firstItem="ddO-pw-cND" firstAttribute="leading" secondItem="jfx-9Z-sG1" secondAttribute="leading" constant="8" id="NiR-LG-F1E"/>
+                                    <constraint firstItem="ddO-pw-cND" firstAttribute="top" secondItem="jfx-9Z-sG1" secondAttribute="top" constant="2" id="efi-vf-2cP"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IeW-ET-7dI">
+                                <rect key="frame" x="11" y="13" width="280" height="31"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6:00pm - 9:00pm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RwT-N5-qhI">
+                                <rect key="frame" x="11" y="44" width="280" height="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="caV-7G-vn3" userLabel="drivingToView">
+                                <rect key="frame" x="11" y="69" width="140" height="90"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DRIVING TO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Irt-Ug-fwr">
+                                        <rect key="frame" x="39" y="8" width="60" height="13"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="11"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E57-ky-Zrk" userLabel="driverToView" customClass="PersonButton" customModule="whos_driving_production" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="29" width="140" height="61"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="E57-ky-Zrk" secondAttribute="bottom" id="8ur-Gq-dq6"/>
+                                    <constraint firstItem="E57-ky-Zrk" firstAttribute="leading" secondItem="caV-7G-vn3" secondAttribute="leading" id="F8R-A5-MJv"/>
+                                    <constraint firstAttribute="centerX" secondItem="Irt-Ug-fwr" secondAttribute="centerX" constant="1.5" id="K6K-jd-izp"/>
+                                    <constraint firstItem="Irt-Ug-fwr" firstAttribute="top" secondItem="caV-7G-vn3" secondAttribute="top" constant="8" id="QEg-Iu-3PV"/>
+                                    <constraint firstItem="E57-ky-Zrk" firstAttribute="top" secondItem="Irt-Ug-fwr" secondAttribute="bottom" constant="8" id="dnp-yG-PbX"/>
+                                    <constraint firstAttribute="trailing" secondItem="E57-ky-Zrk" secondAttribute="trailing" id="ft0-zz-xJe"/>
+                                </constraints>
+                            </view>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xIw-JL-95m" userLabel="drivingFromView">
+                                <rect key="frame" x="150" y="69" width="140" height="90"/>
+                                <subviews>
+                                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GfX-xj-syY" userLabel="driverFromView" customClass="PersonButton" customModule="whos_driving_production" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="29" width="140" height="61"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DRIVING FROM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olD-mE-HNZ">
+                                        <rect key="frame" x="31" y="8" width="76" height="13"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="11"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="GfX-xj-syY" secondAttribute="bottom" id="3IM-Tt-oRh"/>
+                                    <constraint firstAttribute="centerX" secondItem="olD-mE-HNZ" secondAttribute="centerX" constant="1.5" id="6Ff-zU-bYu"/>
+                                    <constraint firstItem="GfX-xj-syY" firstAttribute="top" secondItem="olD-mE-HNZ" secondAttribute="bottom" constant="8" id="A7R-yz-v5f"/>
+                                    <constraint firstItem="GfX-xj-syY" firstAttribute="leading" secondItem="xIw-JL-95m" secondAttribute="leading" id="MC2-To-f8g"/>
+                                    <constraint firstItem="olD-mE-HNZ" firstAttribute="top" secondItem="xIw-JL-95m" secondAttribute="top" constant="8" id="YaR-Pm-dap"/>
+                                    <constraint firstAttribute="trailing" secondItem="GfX-xj-syY" secondAttribute="trailing" id="tp2-8S-3nl"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="02D-Ew-B9U" userLabel="horizontalSeparator" customClass="DividerLine" customModule="whos_driving_production" customModuleProvider="target">
+                                <rect key="frame" x="11" y="69" width="280" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="1" placeholderIntrinsicHeight="infinite" translatesAutoresizingMaskIntoConstraints="NO" id="Uep-LY-1Dn" userLabel="verticalSeparator" customClass="DividerLine" customModule="whos_driving_production" customModuleProvider="target">
+                                <rect key="frame" x="149" y="69" width="1" height="90"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="02D-Ew-B9U" firstAttribute="leading" secondItem="caV-7G-vn3" secondAttribute="leading" id="2Vc-Zm-5v5"/>
+                            <constraint firstAttribute="centerX" secondItem="Uep-LY-1Dn" secondAttribute="centerX" id="32j-4Q-Qnn"/>
+                            <constraint firstItem="RwT-N5-qhI" firstAttribute="top" secondItem="IeW-ET-7dI" secondAttribute="bottom" id="4aR-2F-nXe"/>
+                            <constraint firstItem="xIw-JL-95m" firstAttribute="height" secondItem="Uep-LY-1Dn" secondAttribute="height" id="7SU-nH-GOA"/>
+                            <constraint firstItem="02D-Ew-B9U" firstAttribute="leading" secondItem="RwT-N5-qhI" secondAttribute="leading" id="8kg-Cg-hsJ"/>
+                            <constraint firstItem="caV-7G-vn3" firstAttribute="width" secondItem="02D-Ew-B9U" secondAttribute="width" multiplier="1:2" id="AmG-fu-wpo"/>
+                            <constraint firstAttribute="trailing" secondItem="02D-Ew-B9U" secondAttribute="trailing" constant="8" id="FeB-Tr-zDS"/>
+                            <constraint firstItem="jfx-9Z-sG1" firstAttribute="leading" secondItem="IeW-ET-7dI" secondAttribute="leading" id="G7K-7K-AO4"/>
+                            <constraint firstItem="IeW-ET-7dI" firstAttribute="top" secondItem="jfx-9Z-sG1" secondAttribute="bottom" id="GAA-SV-hBW"/>
+                            <constraint firstAttribute="trailing" secondItem="RwT-N5-qhI" secondAttribute="trailing" constant="8" id="QsP-ve-yA8"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IeW-ET-7dI" secondAttribute="trailing" constant="8" id="TJe-P1-ekd"/>
+                            <constraint firstItem="IeW-ET-7dI" firstAttribute="leading" secondItem="YRZ-aH-I6G" secondAttribute="leading" constant="11" id="WYg-PT-b1J"/>
+                            <constraint firstAttribute="bottom" secondItem="Uep-LY-1Dn" secondAttribute="bottom" constant="10" id="ZdP-1D-aCC"/>
+                            <constraint firstItem="02D-Ew-B9U" firstAttribute="top" secondItem="Uep-LY-1Dn" secondAttribute="top" id="cRp-K7-nUa"/>
+                            <constraint firstItem="xIw-JL-95m" firstAttribute="leading" secondItem="Uep-LY-1Dn" secondAttribute="trailing" id="fX1-V3-Osy"/>
+                            <constraint firstItem="xIw-JL-95m" firstAttribute="top" secondItem="02D-Ew-B9U" secondAttribute="bottom" constant="-1" id="j5T-SF-r4e"/>
+                            <constraint firstItem="IeW-ET-7dI" firstAttribute="leading" secondItem="RwT-N5-qhI" secondAttribute="leading" id="lgb-ZV-e8s"/>
+                            <constraint firstItem="02D-Ew-B9U" firstAttribute="top" secondItem="RwT-N5-qhI" secondAttribute="bottom" constant="8" id="mAb-zM-oAs"/>
+                            <constraint firstAttribute="trailing" secondItem="IeW-ET-7dI" secondAttribute="trailing" constant="8" id="rwH-mf-vLK"/>
+                            <constraint firstItem="jfx-9Z-sG1" firstAttribute="top" secondItem="YRZ-aH-I6G" secondAttribute="top" priority="750" constant="-2" id="sQw-vw-vFo"/>
+                            <constraint firstItem="caV-7G-vn3" firstAttribute="top" secondItem="02D-Ew-B9U" secondAttribute="bottom" constant="-1" id="tg2-CN-29B"/>
+                            <constraint firstItem="xIw-JL-95m" firstAttribute="width" secondItem="02D-Ew-B9U" secondAttribute="width" multiplier="1:2" id="wAz-zr-WgG"/>
+                            <constraint firstItem="caV-7G-vn3" firstAttribute="height" secondItem="Uep-LY-1Dn" secondAttribute="height" id="wo4-PU-lmR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YRZ-aH-I6G" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="6Q2-9W-aEP"/>
+                    <constraint firstItem="YRZ-aH-I6G" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="55" id="FFw-c6-lEX"/>
+                    <constraint firstItem="YRZ-aH-I6G" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="jfb-lm-uap"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="YRZ-aH-I6G" secondAttribute="trailing" constant="5" id="kSc-aK-cin"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="coloredEdgeView" destination="YRZ-aH-I6G" id="uAv-44-Pmb"/>
+                <outlet property="driverFromView" destination="GfX-xj-syY" id="0oH-KP-BAD"/>
+                <outlet property="driverToView" destination="E57-ky-Zrk" id="XyS-T1-HWg"/>
+                <outlet property="drivingFromLabel" destination="olD-mE-HNZ" id="SE0-KH-Lze"/>
+                <outlet property="drivingToLabel" destination="Irt-Ug-fwr" id="UHl-KE-QgH"/>
+                <outlet property="timeLabel" destination="RwT-N5-qhI" id="UNJ-m0-jck"/>
+                <outlet property="titleLabel" destination="IeW-ET-7dI" id="WBm-26-Ruu"/>
+                <outlet property="updatedLabel" destination="ddO-pw-cND" id="GNu-ar-2k7"/>
+                <outlet property="updatedLabelContainer" destination="jfx-9Z-sG1" id="ctl-jL-FcV"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

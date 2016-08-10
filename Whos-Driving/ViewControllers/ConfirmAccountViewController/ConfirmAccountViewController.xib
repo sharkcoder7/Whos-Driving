@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfirmAccountViewController" customModule="whos_driving_staging" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="tRy-f1-fg5" id="KIb-8e-h9Z"/>
+                <outlet property="emailConfirmedLabel" destination="1W1-8Y-yhA" id="L2e-M9-mdC"/>
+                <outlet property="emailLabel" destination="xvG-kE-pl2" id="Erp-9p-7vd"/>
+                <outlet property="thanksLabel" destination="Phm-PL-MKV" id="PpP-6S-xyh"/>
+                <outlet property="view" destination="iN0-l3-epB" id="USY-yL-sUb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="8PU-sR-OxH" userLabel="logoImageView">
+                    <rect key="frame" x="186" y="100" width="228" height="38"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phm-PL-MKV" userLabel="thanksLabel">
+                    <rect key="frame" x="260" y="176" width="81" height="29"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your email has been confirmed!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1W1-8Y-yhA" userLabel="emailConfirmedLabel">
+                    <rect key="frame" x="30" y="216" width="540" height="29"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email@example.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvG-kE-pl2" userLabel="emailLabel">
+                    <rect key="frame" x="229" y="256" width="143" height="18"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NcR-Aq-FRb" userLabel="continueToAppButton">
+                    <rect key="frame" x="13" y="364" width="574" height="44"/>
+                    <color key="backgroundColor" red="0.36470588240000001" green="0.63137254899999995" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Kmo-yA-LTb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="Continue to App">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="continueToAppButtonPressed" destination="-1" eventType="touchUpInside" id="EHH-gX-PVE"/>
+                    </connections>
+                </button>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="tRy-f1-fg5" userLabel="activityIndicator">
+                    <rect key="frame" x="290" y="255" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="0.27058823529411763" green="0.5725490196078431" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="tRy-f1-fg5" firstAttribute="centerY" secondItem="xvG-kE-pl2" secondAttribute="centerY" id="2vp-ba-bt0"/>
+                <constraint firstItem="1W1-8Y-yhA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="3Hk-uH-xCT"/>
+                <constraint firstItem="8PU-sR-OxH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="6uH-03-Np4"/>
+                <constraint firstAttribute="trailing" secondItem="1W1-8Y-yhA" secondAttribute="trailing" constant="30" id="87M-PW-Hg5"/>
+                <constraint firstItem="1W1-8Y-yhA" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9WS-le-S3t"/>
+                <constraint firstItem="Phm-PL-MKV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="K5L-sD-M9W"/>
+                <constraint firstItem="8PU-sR-OxH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="O8s-j8-PBU"/>
+                <constraint firstItem="NcR-Aq-FRb" firstAttribute="top" secondItem="xvG-kE-pl2" secondAttribute="bottom" constant="90" id="bOM-I7-jdc"/>
+                <constraint firstItem="Phm-PL-MKV" firstAttribute="top" secondItem="8PU-sR-OxH" secondAttribute="bottom" constant="38" id="ceB-sk-3JE"/>
+                <constraint firstItem="1W1-8Y-yhA" firstAttribute="top" secondItem="Phm-PL-MKV" secondAttribute="bottom" constant="11" id="j67-dN-fbB"/>
+                <constraint firstItem="tRy-f1-fg5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="nrM-ej-yhN"/>
+                <constraint firstItem="xvG-kE-pl2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="sJI-U1-1sy"/>
+                <constraint firstItem="xvG-kE-pl2" firstAttribute="top" secondItem="1W1-8Y-yhA" secondAttribute="bottom" constant="11" id="t0d-mV-Wwb"/>
+                <constraint firstAttribute="trailing" secondItem="NcR-Aq-FRb" secondAttribute="trailing" constant="13" id="vFS-Gc-LA6"/>
+                <constraint firstItem="NcR-Aq-FRb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="13" id="z60-Hd-e2U"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="9WS-le-S3t"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo" width="228" height="38"/>
+    </resources>
+</document>

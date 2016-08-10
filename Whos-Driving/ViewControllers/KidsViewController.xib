@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KidsViewController" customModule="whos_driving_production" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="DQ5-LL-krt" id="jeW-9i-pGu"/>
+                <outlet property="emptyStateView" destination="fNc-5D-paK" id="4eg-yZ-v29"/>
+                <outlet property="segmentedControl" destination="sXN-pt-wID" id="9wY-5a-2RV"/>
+                <outlet property="view" destination="nye-BG-iam" id="kdc-Db-9yj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="nye-BG-iam">
+            <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="DQ5-LL-krt">
+                    <rect key="frame" x="0.0" y="43" width="375" height="560"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="aiU-OQ-Cu7">
+                        <size key="itemSize" width="69" height="65"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="15" minY="30" maxX="15" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="qEk-Vs-q5a"/>
+                        <outlet property="delegate" destination="-1" id="hKV-sp-1A1"/>
+                    </connections>
+                </collectionView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="sXN-pt-wID">
+                    <rect key="frame" x="10" y="15" width="355" height="29"/>
+                    <animations/>
+                    <segments>
+                        <segment title="My Kids"/>
+                        <segment title="Others' Kids"/>
+                    </segments>
+                    <connections>
+                        <action selector="segmentedSelected:" destination="-1" eventType="valueChanged" id="YEk-dU-4hO"/>
+                    </connections>
+                </segmentedControl>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fNc-5D-paK" customClass="EmptyStateView" customModule="whos_driving_production" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="43" width="375" height="560"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="sXN-pt-wID" firstAttribute="leading" secondItem="nye-BG-iam" secondAttribute="leading" constant="10" id="2OY-zA-sjj"/>
+                <constraint firstItem="fNc-5D-paK" firstAttribute="top" secondItem="sXN-pt-wID" secondAttribute="bottom" id="3vZ-cf-vQZ"/>
+                <constraint firstAttribute="bottom" secondItem="fNc-5D-paK" secondAttribute="bottom" id="8iL-MV-QuI"/>
+                <constraint firstAttribute="trailing" secondItem="sXN-pt-wID" secondAttribute="trailing" constant="10" id="OCE-3Q-JSU"/>
+                <constraint firstAttribute="trailing" secondItem="DQ5-LL-krt" secondAttribute="trailing" id="PvP-aY-tX9"/>
+                <constraint firstAttribute="trailing" secondItem="fNc-5D-paK" secondAttribute="trailing" id="TFz-VB-Ak4"/>
+                <constraint firstItem="DQ5-LL-krt" firstAttribute="top" secondItem="sXN-pt-wID" secondAttribute="bottom" id="XHE-gW-mqm"/>
+                <constraint firstAttribute="bottom" secondItem="DQ5-LL-krt" secondAttribute="bottom" id="anE-34-ZlM"/>
+                <constraint firstItem="fNc-5D-paK" firstAttribute="leading" secondItem="nye-BG-iam" secondAttribute="leading" id="mOF-Nx-Hea"/>
+                <constraint firstItem="sXN-pt-wID" firstAttribute="top" secondItem="nye-BG-iam" secondAttribute="top" constant="15" id="ukp-n2-deD"/>
+                <constraint firstItem="DQ5-LL-krt" firstAttribute="leading" secondItem="nye-BG-iam" secondAttribute="leading" id="yDn-uh-txK"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="334.5" y="382.5"/>
+        </view>
+    </objects>
+</document>

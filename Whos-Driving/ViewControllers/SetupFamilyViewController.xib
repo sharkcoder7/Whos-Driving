@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SetupFamilyViewController" customModule="whos_driving_production" customModuleProvider="target">
+            <connections>
+                <outlet property="headerContainerLeftConstraint" destination="oLx-ar-Xw1" id="0Nl-7j-iMq"/>
+                <outlet property="headerContainerView" destination="RVN-Ij-8o8" id="oxw-V1-f3Z"/>
+                <outlet property="headerContainerWidthConstraint" destination="Bxz-1V-nHP" id="WrR-0K-zbY"/>
+                <outlet property="headerLabel" destination="xpP-wz-fxM" id="dxa-Ho-6Hb"/>
+                <outlet property="inviteSpouseButton" destination="lrK-rG-NfB" id="rmL-i3-jpk"/>
+                <outlet property="kidsCollectionView" destination="JHf-wT-fSI" id="yhL-xZ-ZLP"/>
+                <outlet property="scrollView" destination="whT-6I-qwC" id="uCv-dJ-mBo"/>
+                <outlet property="subheadingLabel" destination="IPX-df-Jsf" id="quD-UD-4cd"/>
+                <outlet property="title3Label" destination="5HI-Gs-tDY" id="fLu-Xe-0nI"/>
+                <outlet property="title4Label" destination="G94-UT-8TQ" id="cRN-W8-lpE"/>
+                <outlet property="title5Label" destination="hsG-Fk-5oF" id="m6z-qh-CVt"/>
+                <outlet property="title5SubLabel" destination="zS6-Ax-96a" id="TAE-b5-iqO"/>
+                <outlet property="trustedDriverCollectionView" destination="aNb-3C-eUb" id="aXw-u5-43m"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="whT-6I-qwC">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RVN-Ij-8o8">
+                            <rect key="frame" x="14" y="14" width="347" height="110"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Almost done!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpP-wz-fxM">
+                                    <rect key="frame" x="99" y="18" width="148" height="31"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="26"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPX-df-Jsf">
+                                    <rect key="frame" x="46" y="57" width="255" height="34"/>
+                                    <string key="text">Now, tell us about your family, and
+invite a trusted driver to join your carpools.</string>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.61824115950000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="110" id="4P9-I2-M9p"/>
+                                <constraint firstAttribute="width" constant="347" id="Bxz-1V-nHP"/>
+                                <constraint firstAttribute="centerX" secondItem="IPX-df-Jsf" secondAttribute="centerX" id="agq-OG-ifS"/>
+                                <constraint firstItem="IPX-df-Jsf" firstAttribute="top" secondItem="xpP-wz-fxM" secondAttribute="bottom" constant="8" id="bsv-Q4-05R"/>
+                                <constraint firstAttribute="centerX" secondItem="xpP-wz-fxM" secondAttribute="centerX" id="dnQ-WL-EPe"/>
+                                <constraint firstItem="xpP-wz-fxM" firstAttribute="top" secondItem="RVN-Ij-8o8" secondAttribute="top" constant="18" id="qAa-Ow-sTo"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5HI-Gs-tDY">
+                            <rect key="frame" x="22" y="150" width="245" height="17"/>
+                            <attributedString key="attributedText">
+                                <fragment content="3. Invite your spouse/partner ">
+                                    <attributes>
+                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="14" name="HelveticaNeue-Medium"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                    </attributes>
+                                </fragment>
+                                <fragment content="(optional)">
+                                    <attributes>
+                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="14" name="HelveticaNeue-Light"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4. Add your kids" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G94-UT-8TQ">
+                            <rect key="frame" x="22" y="265" width="106" height="17"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5. Invite a trusted driver" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsG-Fk-5oF">
+                            <rect key="frame" x="22" y="385" width="153" height="17"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lrK-rG-NfB" customClass="PersonButton" customModule="whos_driving_production" customModuleProvider="target">
+                            <rect key="frame" x="17" y="181" width="80" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="B9G-Pe-EgO"/>
+                                <constraint firstAttribute="width" constant="80" id="tIe-DX-QIJ"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="imageSize">
+                                    <real key="value" value="44"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="inviteButtonTapped:" destination="-1" eventType="touchUpInside" id="k2I-7E-1VC"/>
+                            </connections>
+                        </view>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="JHf-wT-fSI" userLabel="Kids Collection View">
+                            <rect key="frame" x="0.0" y="296" width="375" height="65"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="65" id="2Gj-oF-gkN"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="VuI-NT-TsN">
+                                <size key="itemSize" width="80" height="65"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="17" minY="0.0" maxX="17" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="L8p-Ii-t1J"/>
+                                <outlet property="delegate" destination="-1" id="kxA-mL-KLh"/>
+                            </connections>
+                        </collectionView>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="aNb-3C-eUb" userLabel="Trusted Drivers Collection View">
+                            <rect key="frame" x="0.0" y="473" width="375" height="65"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="65" id="tKU-R5-XWU"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="WlD-J4-kcY">
+                                <size key="itemSize" width="80" height="65"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="17" minY="0.0" maxX="17" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="bfT-tC-GWh"/>
+                                <outlet property="delegate" destination="-1" id="3QD-so-nJV"/>
+                            </connections>
+                        </collectionView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zS6-Ax-96a">
+                            <rect key="frame" x="22" y="402" width="331" height="57"/>
+                            <string key="text">You need to be connected with at least one additional driver to setup a carpool. Invite a driver you trust (e.g. your neighbor, a nanny, a close friend). Drivers you invite will be able to see a list of your kids and add them to a carpool.</string>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="12"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="hsG-Fk-5oF" firstAttribute="top" secondItem="JHf-wT-fSI" secondAttribute="bottom" constant="24" id="6Vk-tP-QjA"/>
+                        <constraint firstItem="aNb-3C-eUb" firstAttribute="leading" secondItem="whT-6I-qwC" secondAttribute="leading" id="7uf-hJ-w7p"/>
+                        <constraint firstAttribute="bottom" secondItem="aNb-3C-eUb" secondAttribute="bottom" constant="14" id="Cnj-vE-NCM"/>
+                        <constraint firstItem="lrK-rG-NfB" firstAttribute="top" secondItem="5HI-Gs-tDY" secondAttribute="bottom" constant="14" id="DUa-mx-yJn"/>
+                        <constraint firstAttribute="centerX" secondItem="zS6-Ax-96a" secondAttribute="centerX" id="G46-yn-XFv"/>
+                        <constraint firstItem="lrK-rG-NfB" firstAttribute="leading" secondItem="whT-6I-qwC" secondAttribute="leading" constant="17" id="H4p-So-MV9"/>
+                        <constraint firstItem="G94-UT-8TQ" firstAttribute="leading" secondItem="5HI-Gs-tDY" secondAttribute="leading" id="KKJ-ps-H5w"/>
+                        <constraint firstItem="aNb-3C-eUb" firstAttribute="top" secondItem="zS6-Ax-96a" secondAttribute="bottom" constant="14" id="MSr-WS-jnJ"/>
+                        <constraint firstItem="zS6-Ax-96a" firstAttribute="top" secondItem="hsG-Fk-5oF" secondAttribute="bottom" id="T8b-aO-Lk9"/>
+                        <constraint firstItem="G94-UT-8TQ" firstAttribute="top" secondItem="lrK-rG-NfB" secondAttribute="bottom" constant="24" id="Z0k-LQ-T4O"/>
+                        <constraint firstItem="JHf-wT-fSI" firstAttribute="top" secondItem="G94-UT-8TQ" secondAttribute="bottom" constant="14" id="bTL-gr-yaz"/>
+                        <constraint firstAttribute="trailing" secondItem="JHf-wT-fSI" secondAttribute="trailing" id="dkG-XN-Pg6"/>
+                        <constraint firstItem="5HI-Gs-tDY" firstAttribute="leading" secondItem="RVN-Ij-8o8" secondAttribute="leading" constant="8" id="e3c-p6-eK8"/>
+                        <constraint firstAttribute="trailing" secondItem="aNb-3C-eUb" secondAttribute="trailing" id="g4K-hp-2dQ"/>
+                        <constraint firstItem="JHf-wT-fSI" firstAttribute="leading" secondItem="whT-6I-qwC" secondAttribute="leading" id="kCZ-KK-6WE"/>
+                        <constraint firstItem="5HI-Gs-tDY" firstAttribute="top" secondItem="RVN-Ij-8o8" secondAttribute="bottom" constant="26" id="kR4-uI-y9U"/>
+                        <constraint firstItem="RVN-Ij-8o8" firstAttribute="leading" secondItem="whT-6I-qwC" secondAttribute="leading" constant="14" id="oLx-ar-Xw1"/>
+                        <constraint firstAttribute="bottom" secondItem="RVN-Ij-8o8" secondAttribute="bottom" constant="479" id="svQ-Sd-CI4"/>
+                        <constraint firstAttribute="trailing" secondItem="RVN-Ij-8o8" secondAttribute="trailing" constant="14" id="vfG-z4-MKf"/>
+                        <constraint firstItem="RVN-Ij-8o8" firstAttribute="top" secondItem="whT-6I-qwC" secondAttribute="top" constant="14" id="xXI-Nd-QEZ"/>
+                        <constraint firstItem="zS6-Ax-96a" firstAttribute="leading" secondItem="5HI-Gs-tDY" secondAttribute="leading" id="yDJ-rq-1KA"/>
+                        <constraint firstItem="hsG-Fk-5oF" firstAttribute="leading" secondItem="5HI-Gs-tDY" secondAttribute="leading" id="zQP-rA-65P"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="svQ-Sd-CI4"/>
+                        </mask>
+                    </variation>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="whT-6I-qwC" secondAttribute="trailing" id="IVB-6h-FJ9"/>
+                <constraint firstItem="whT-6I-qwC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RIu-9I-hoO"/>
+                <constraint firstItem="whT-6I-qwC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fis-7V-dbA"/>
+                <constraint firstAttribute="bottom" secondItem="whT-6I-qwC" secondAttribute="bottom" id="qJf-TF-g2E"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="418.5" y="586.5"/>
+        </view>
+    </objects>
+</document>

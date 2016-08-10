@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailsSummaryView" customModule="whos_driving_production" customModuleProvider="target">
+            <connections>
+                <outlet property="coloredEdgeView" destination="0jB-3S-5Tv" id="Vor-eH-dw6"/>
+                <outlet property="dateLabel" destination="g5b-2U-FeR" id="L1Y-hA-mlW"/>
+                <outlet property="dividerLine" destination="WiF-4e-6V1" id="oS0-Zo-7Zr"/>
+                <outlet property="dividerLineHeight" destination="cxH-He-aVv" id="5f3-x3-RZd"/>
+                <outlet property="editButton" destination="L4Q-3V-Lzp" id="D9B-Xr-Mgm"/>
+                <outlet property="locationLabel" destination="fko-ZB-6zU" id="3xF-VI-LGq"/>
+                <outlet property="mapContainerView" destination="wgq-n2-34e" id="Qyt-Ba-24M"/>
+                <outlet property="mapContainerViewHeightConstraint" destination="56r-Ya-Ufk" id="rIR-SI-Zmj"/>
+                <outlet property="mapDisclaimerLabel" destination="4Zv-zr-XGx" id="mc8-0P-9vR"/>
+                <outlet property="mapView" destination="JMR-Eb-n0z" id="eAY-LD-Led"/>
+                <outlet property="titleLabel" destination="Qsv-bZ-zLe" id="sZy-YS-kxl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="MBD-qX-66I">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="208"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0jB-3S-5Tv" customClass="ColoredEdgeView" customModule="whos_driving_production" customModuleProvider="target">
+                    <rect key="frame" x="13" y="13" width="349" height="195"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Event Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qsv-bZ-zLe">
+                            <rect key="frame" x="10" y="10" width="267" height="28.5"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="24"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5b-2U-FeR" userLabel="Date Label">
+                            <rect key="frame" x="10" y="40.5" width="329" height="16.5"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" text="Location label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fko-ZB-6zU">
+                            <rect key="frame" x="10" y="57" width="88" height="17"/>
+                            <animations/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WiF-4e-6V1" userLabel="Divider Line">
+                            <rect key="frame" x="2" y="84" width="347" height="1"/>
+                            <animations/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="cxH-He-aVv"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="254" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4Q-3V-Lzp">
+                            <rect key="frame" x="281" y="12" width="60" height="26"/>
+                            <animations/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="nsB-hk-zgH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                            <inset key="titleEdgeInsets" minX="-55" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="-53" maxY="0.0"/>
+                            <state key="normal" title="Edit" image="edit">
+                                <color key="titleColor" red="0.21960784310000001" green="0.21960784310000001" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="editButtonTapped:" destination="-1" eventType="touchUpInside" id="efH-5Y-i0J"/>
+                            </connections>
+                        </button>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wgq-n2-34e">
+                            <rect key="frame" x="0.0" y="85" width="349" height="110"/>
+                            <subviews>
+                                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JMR-Eb-n0z">
+                                    <rect key="frame" x="0.0" y="0.0" width="349" height="110"/>
+                                    <animations/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="24T-tn-zvd"/>
+                                    </connections>
+                                </mapView>
+                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Map pin not guaranteed to be accurate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Zv-zr-XGx">
+                                    <rect key="frame" x="160.5" y="90" width="177.5" height="11"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="9"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="110" id="56r-Ya-Ufk"/>
+                                <constraint firstItem="JMR-Eb-n0z" firstAttribute="leading" secondItem="wgq-n2-34e" secondAttribute="leading" id="Gs5-rX-vdW"/>
+                                <constraint firstAttribute="trailing" secondItem="JMR-Eb-n0z" secondAttribute="trailing" id="Lbl-FS-ImE"/>
+                                <constraint firstAttribute="trailing" secondItem="4Zv-zr-XGx" secondAttribute="trailing" constant="11" id="Pjv-dP-d64"/>
+                                <constraint firstItem="JMR-Eb-n0z" firstAttribute="top" secondItem="wgq-n2-34e" secondAttribute="top" id="U0r-2G-Na5"/>
+                                <constraint firstAttribute="bottom" secondItem="JMR-Eb-n0z" secondAttribute="bottom" id="kLc-4v-JwU"/>
+                                <constraint firstAttribute="bottom" secondItem="4Zv-zr-XGx" secondAttribute="bottom" constant="9" id="tcw-TH-Rnt"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="L4Q-3V-Lzp" firstAttribute="centerY" secondItem="Qsv-bZ-zLe" secondAttribute="centerY" id="7HM-dV-mCC"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fko-ZB-6zU" secondAttribute="trailing" constant="10" id="7oC-CT-Zzj"/>
+                        <constraint firstItem="fko-ZB-6zU" firstAttribute="top" secondItem="g5b-2U-FeR" secondAttribute="bottom" id="94v-Dk-9YX"/>
+                        <constraint firstAttribute="trailing" secondItem="g5b-2U-FeR" secondAttribute="trailing" constant="10" id="BxG-ue-ibh"/>
+                        <constraint firstItem="L4Q-3V-Lzp" firstAttribute="leading" secondItem="Qsv-bZ-zLe" secondAttribute="trailing" constant="4" id="Cxh-oJ-X4Z"/>
+                        <constraint firstAttribute="trailing" secondItem="WiF-4e-6V1" secondAttribute="trailing" id="DJn-uO-FTJ"/>
+                        <constraint firstItem="WiF-4e-6V1" firstAttribute="top" secondItem="fko-ZB-6zU" secondAttribute="bottom" constant="10" id="F71-L6-IRY"/>
+                        <constraint firstItem="Qsv-bZ-zLe" firstAttribute="leading" secondItem="0jB-3S-5Tv" secondAttribute="leading" constant="10" id="MmB-l5-Yf3"/>
+                        <constraint firstAttribute="bottom" secondItem="wgq-n2-34e" secondAttribute="bottom" id="Ody-Jm-KSr"/>
+                        <constraint firstAttribute="trailing" secondItem="wgq-n2-34e" secondAttribute="trailing" id="Q3X-ka-JLz"/>
+                        <constraint firstItem="wgq-n2-34e" firstAttribute="leading" secondItem="0jB-3S-5Tv" secondAttribute="leading" id="QQT-pR-MO9"/>
+                        <constraint firstItem="Qsv-bZ-zLe" firstAttribute="top" secondItem="0jB-3S-5Tv" secondAttribute="top" constant="10" id="Qdk-pf-g5C"/>
+                        <constraint firstItem="g5b-2U-FeR" firstAttribute="top" secondItem="Qsv-bZ-zLe" secondAttribute="bottom" constant="2" id="Xae-Ib-eYY"/>
+                        <constraint firstItem="fko-ZB-6zU" firstAttribute="leading" secondItem="0jB-3S-5Tv" secondAttribute="leading" constant="10" id="YLO-Un-5UL"/>
+                        <constraint firstItem="g5b-2U-FeR" firstAttribute="leading" secondItem="Qsv-bZ-zLe" secondAttribute="leading" id="eW3-lb-AJ6"/>
+                        <constraint firstItem="WiF-4e-6V1" firstAttribute="leading" secondItem="0jB-3S-5Tv" secondAttribute="leading" constant="2" id="hdM-7Q-GzX"/>
+                        <constraint firstItem="wgq-n2-34e" firstAttribute="top" secondItem="WiF-4e-6V1" secondAttribute="bottom" id="tjn-h4-cTw"/>
+                        <constraint firstAttribute="trailing" secondItem="L4Q-3V-Lzp" secondAttribute="trailing" constant="8" id="uJi-YW-KWf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0jB-3S-5Tv" firstAttribute="top" secondItem="MBD-qX-66I" secondAttribute="top" constant="13" id="1xe-oV-uoH"/>
+                <constraint firstAttribute="centerX" secondItem="0jB-3S-5Tv" secondAttribute="centerX" id="DPx-w2-1pZ"/>
+                <constraint firstItem="0jB-3S-5Tv" firstAttribute="leading" secondItem="MBD-qX-66I" secondAttribute="leading" constant="13" id="KqI-KP-mHa"/>
+                <constraint firstAttribute="bottom" secondItem="0jB-3S-5Tv" secondAttribute="bottom" id="QJj-OI-GeI"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="309.5" y="326"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="edit" width="26" height="26"/>
+    </resources>
+</document>

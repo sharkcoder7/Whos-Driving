@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CarpoolTextView" customModule="whos_driving_production" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="PYI-gH-Cl3" id="I2N-cL-uoa"/>
+                <outlet property="textField" destination="fqF-FU-nBI" id="Tvj-Dw-UHj"/>
+                <outlet property="titleLabel" destination="ZDa-gC-lyq" id="rv4-Dj-OwY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-flag" translatesAutoresizingMaskIntoConstraints="NO" id="PYI-gH-Cl3" userLabel="imageView">
+                    <rect key="frame" x="15" y="10" width="26" height="26"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDa-gC-lyq" userLabel="label">
+                    <rect key="frame" x="49" y="15" width="28" height="17"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" white="0.40000000000000002" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Placeholder" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fqF-FU-nBI" userLabel="textField">
+                    <rect key="frame" x="85" y="15" width="507" height="17"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NHa-wc-51Q" userLabel="divider line">
+                    <rect key="frame" x="5" y="44" width="590" height="1"/>
+                    <color key="backgroundColor" white="0.95000000000000007" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="qqF-Pg-nt3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fqF-FU-nBI" secondAttribute="trailing" constant="8" id="Moy-2g-heq"/>
+                <constraint firstItem="ZDa-gC-lyq" firstAttribute="leading" secondItem="PYI-gH-Cl3" secondAttribute="trailing" constant="8" id="PC4-nx-i9K"/>
+                <constraint firstItem="PYI-gH-Cl3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="VP6-in-beD"/>
+                <constraint firstItem="NHa-wc-51Q" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="ahI-34-bpq"/>
+                <constraint firstAttribute="trailing" secondItem="NHa-wc-51Q" secondAttribute="trailing" constant="5" id="cbt-ba-fRV"/>
+                <constraint firstItem="ZDa-gC-lyq" firstAttribute="centerY" secondItem="PYI-gH-Cl3" secondAttribute="centerY" id="dAD-iz-f4y"/>
+                <constraint firstItem="PYI-gH-Cl3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="jDl-sI-M6V"/>
+                <constraint firstItem="ZDa-gC-lyq" firstAttribute="centerY" secondItem="fqF-FU-nBI" secondAttribute="centerY" id="tvd-A5-QZ5"/>
+                <constraint firstItem="fqF-FU-nBI" firstAttribute="leading" secondItem="ZDa-gC-lyq" secondAttribute="trailing" constant="8" id="uq4-bW-HCY"/>
+                <constraint firstAttribute="bottom" secondItem="NHa-wc-51Q" secondAttribute="bottom" id="yWg-x2-UlQ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="904" y="143.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add-flag" width="26" height="26"/>
+    </resources>
+</document>

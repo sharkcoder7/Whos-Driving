@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CarpoolDetailsViewController" customModule="whos_driving_production" customModuleProvider="target">
+            <connections>
+                <outlet property="drivingFromView" destination="T7d-AP-3dD" id="arb-QT-nuj"/>
+                <outlet property="drivingToView" destination="svD-dQ-ttw" id="ma7-sM-dG7"/>
+                <outlet property="headerContainerHeightConstraint" destination="xHK-px-D68" id="9J9-Vh-vDT"/>
+                <outlet property="headerContainerPaddingConstraint" destination="xWW-bi-D7F" id="dnJ-kk-qva"/>
+                <outlet property="headerContainerView" destination="GhS-nQ-Ov1" id="yms-wI-3aS"/>
+                <outlet property="headerView" destination="4rg-fY-n9o" id="fDv-9j-a3E"/>
+                <outlet property="recentChangeHeightConstraint" destination="1aZ-xF-x3B" id="nMA-d4-N0L"/>
+                <outlet property="recentChangesView" destination="TQQ-n4-1mO" id="nRF-sj-wtj"/>
+                <outlet property="responseConfirmationView" destination="tov-60-jSU" id="Za7-eV-a1P"/>
+                <outlet property="scrollView" destination="hdC-f5-f8x" id="VSv-ep-xyv"/>
+                <outlet property="summaryView" destination="G1P-C4-n59" id="lXc-oQ-kas"/>
+                <outlet property="summaryWidthConstraint" destination="c0K-7I-AlD" id="aGv-rz-vqk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hdC-f5-f8x">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TQQ-n4-1mO" customClass="RecentChangesView" customModule="whos_driving_production" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" id="1aZ-xF-x3B"/>
+                            </constraints>
+                        </view>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GhS-nQ-Ov1">
+                            <rect key="frame" x="13" y="13" width="349" height="0.0"/>
+                            <subviews>
+                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tov-60-jSU" customClass="ResponseConfirmationView" customModule="whos_driving_production" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="349" height="0.0"/>
+                                    <animations/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4rg-fY-n9o" customClass="DetailHeaderView" customModule="whos_driving_production" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="349" height="0.0"/>
+                                    <animations/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="tov-60-jSU" secondAttribute="trailing" id="DwS-CF-6xn"/>
+                                <constraint firstAttribute="bottom" secondItem="4rg-fY-n9o" secondAttribute="bottom" id="LXO-bN-qV9"/>
+                                <constraint firstItem="tov-60-jSU" firstAttribute="top" secondItem="GhS-nQ-Ov1" secondAttribute="top" id="YMF-i1-IEj"/>
+                                <constraint firstItem="4rg-fY-n9o" firstAttribute="top" secondItem="GhS-nQ-Ov1" secondAttribute="top" id="Yfl-Ml-u5E"/>
+                                <constraint firstItem="tov-60-jSU" firstAttribute="leading" secondItem="GhS-nQ-Ov1" secondAttribute="leading" id="YlE-Us-pT8"/>
+                                <constraint firstItem="4rg-fY-n9o" firstAttribute="leading" secondItem="GhS-nQ-Ov1" secondAttribute="leading" id="fTv-xI-Rmz"/>
+                                <constraint firstAttribute="bottom" secondItem="tov-60-jSU" secondAttribute="bottom" id="fvj-nm-k1C"/>
+                                <constraint firstAttribute="trailing" secondItem="4rg-fY-n9o" secondAttribute="trailing" id="hDq-Ci-ZGa"/>
+                                <constraint firstAttribute="height" id="xHK-px-D68"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G1P-C4-n59" customClass="DetailsSummaryView" customModule="whos_driving_production" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="13" width="375" height="100"/>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" placeholder="YES" id="33h-cy-1GN"/>
+                                <constraint firstAttribute="width" constant="375" id="c0K-7I-AlD"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="svD-dQ-ttw" customClass="DetailsToFromView" customModule="whos_driving_production" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="113" width="375" height="100"/>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" placeholder="YES" id="yWh-81-q1O"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T7d-AP-3dD" customClass="DetailsToFromView" customModule="whos_driving_production" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="213" width="375" height="100"/>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" placeholder="YES" id="2Ev-AJ-VMC"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <animations/>
+                    <constraints>
+                        <constraint firstItem="T7d-AP-3dD" firstAttribute="leading" secondItem="hdC-f5-f8x" secondAttribute="leading" id="0r1-S5-hvf"/>
+                        <constraint firstItem="svD-dQ-ttw" firstAttribute="width" secondItem="T7d-AP-3dD" secondAttribute="width" id="8iH-VR-IR5"/>
+                        <constraint firstItem="svD-dQ-ttw" firstAttribute="leading" secondItem="hdC-f5-f8x" secondAttribute="leading" id="9DR-8I-oRg"/>
+                        <constraint firstItem="G1P-C4-n59" firstAttribute="leading" secondItem="hdC-f5-f8x" secondAttribute="leading" id="CV7-g4-apK"/>
+                        <constraint firstAttribute="bottom" secondItem="T7d-AP-3dD" secondAttribute="bottom" constant="13" id="E8f-5X-8Rc"/>
+                        <constraint firstItem="TQQ-n4-1mO" firstAttribute="leading" secondItem="hdC-f5-f8x" secondAttribute="leading" id="FYJ-Mb-Hwe"/>
+                        <constraint firstItem="G1P-C4-n59" firstAttribute="top" secondItem="GhS-nQ-Ov1" secondAttribute="bottom" id="IAY-pb-94N"/>
+                        <constraint firstAttribute="trailing" secondItem="TQQ-n4-1mO" secondAttribute="trailing" id="Jtf-BB-rYV"/>
+                        <constraint firstItem="T7d-AP-3dD" firstAttribute="top" secondItem="svD-dQ-ttw" secondAttribute="bottom" id="RQW-Zh-smf"/>
+                        <constraint firstItem="svD-dQ-ttw" firstAttribute="width" secondItem="G1P-C4-n59" secondAttribute="width" id="VM3-ep-KcI"/>
+                        <constraint firstItem="GhS-nQ-Ov1" firstAttribute="leading" secondItem="hdC-f5-f8x" secondAttribute="leading" constant="13" id="d5M-EP-3eC"/>
+                        <constraint firstAttribute="trailing" secondItem="svD-dQ-ttw" secondAttribute="trailing" id="eNz-Mt-MQk"/>
+                        <constraint firstItem="svD-dQ-ttw" firstAttribute="top" secondItem="G1P-C4-n59" secondAttribute="bottom" id="m84-Kq-4ps"/>
+                        <constraint firstAttribute="bottom" secondItem="G1P-C4-n59" secondAttribute="bottom" constant="349" id="p6c-n2-UDo"/>
+                        <constraint firstAttribute="trailing" secondItem="GhS-nQ-Ov1" secondAttribute="trailing" constant="13" id="p6t-1z-I1C"/>
+                        <constraint firstAttribute="trailing" secondItem="G1P-C4-n59" secondAttribute="trailing" id="pdM-Fu-NAX"/>
+                        <constraint firstAttribute="trailing" secondItem="T7d-AP-3dD" secondAttribute="trailing" id="s9q-5R-hDO"/>
+                        <constraint firstItem="TQQ-n4-1mO" firstAttribute="top" secondItem="hdC-f5-f8x" secondAttribute="top" id="tOb-WB-FhP"/>
+                        <constraint firstItem="GhS-nQ-Ov1" firstAttribute="top" secondItem="TQQ-n4-1mO" secondAttribute="bottom" constant="13" id="xWW-bi-D7F"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="p6c-n2-UDo"/>
+                        </mask>
+                    </variation>
+                </scrollView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hdC-f5-f8x" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="WfG-qn-kvf"/>
+                <constraint firstAttribute="trailing" secondItem="hdC-f5-f8x" secondAttribute="trailing" id="jDH-bz-0O8"/>
+                <constraint firstItem="hdC-f5-f8x" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mzX-4s-7aa"/>
+                <constraint firstAttribute="bottom" secondItem="hdC-f5-f8x" secondAttribute="bottom" id="q40-PR-ys1"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="227.5" y="371.5"/>
+        </view>
+    </objects>
+</document>
